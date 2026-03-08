@@ -1,0 +1,16 @@
+services:
+  wikipedia-tests:
+    build: .
+    container_name: wikipedia-playwright-tests
+    working_dir: /app
+    env_file:
+      - .env
+    environment:
+      CI: "1"
+      HEADLESS: "true"
+      LANG: C.UTF-8
+      TZ: Europe/Berlin
+    volumes:
+      - ./playwright-report:/app/playwright-report
+      - ./test-results:/app/test-results
+    command: npm run test
