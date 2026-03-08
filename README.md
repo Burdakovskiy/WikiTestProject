@@ -93,9 +93,9 @@
 
 ### Приклад .env
 
-WIKI_USERNAME=your_wikipedia_username
-WIKI_PASSWORD=your_wikipedia_password
-WIKI_BASE_URL=https://en.wikipedia.org
+- WIKI_USERNAME=your_wikipedia_username
+- WIKI_PASSWORD=your_wikipedia_password
+- WIKI_BASE_URL=https://en.wikipedia.org
 
 ---
 
@@ -123,9 +123,10 @@ npx playwright install --with-deps chromium
 ### 4. Створити .env
 
 Створити файл .env у корені проєкту та додати туди:
-**WIKI_USERNAME=your_wikipedia_username**
-**WIKI_PASSWORD=your_wikipedia_password**
-**WIKI_BASE_URL=https://en.wikipedia.org**
+
+- **WIKI_USERNAME=your_wikipedia_username**
+- **WIKI_PASSWORD=your_wikipedia_password**
+- **WIKI_BASE_URL=https://en.wikipedia.org**
 
 ### 5. Запуск усіх тестів
 
@@ -161,8 +162,8 @@ docker-compose up --build
 
 ### 9. Звіт у Docker
 
-Після виконання тесту в контейнері HTML-звіт не залишається тільки всередині контейнера, а копіюється в локальну папку хост-комп’ютера.
-Локально звіт буде доступний у папці:
-**playwright-report/**
-Також технічні артефакти можуть зберігатися у папці:
-**test-results/**
+- Після виконання тесту в контейнері HTML-звіт не залишається тільки всередині контейнера, а копіюється в локальну папку хост-комп’ютера.
+- Локально звіт буде доступний у папці:
+  **playwright-report/**
+- Також технічні артефакти можуть зберігатися у папці:
+  **test-results/**
